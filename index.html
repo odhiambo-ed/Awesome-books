@@ -16,23 +16,19 @@
         <div class="container">
             <h1>Awesome Books</h1>
             <div class="book-display">
-                <p>First Book</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <button type="button" class="remove-btn">Remove</button>
-                <hr>
-                <p>Second Book</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <button type="button" class="remove-btn">Remove</button>
-                <hr>
+                <!-- book items -->
             </div>
             <div class="book-add">
                 <div class="field-add">
-                    <input type="text" placeholder="Author"> <br>
-                    <input type="text" placeholder="Title"> <br>
-                    <button type="button" class="add-btn">Add</button>
+                    <form>
+                        <input id="author" type="text" placeholder="Author"><br>
+                        <input id="title" type="text" placeholder="Title"><br>
+                    </form> 
+                    <button id="add-btn" type="button" class="add-btn">Add</button>
                 </div>
             </div>
         </div>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
