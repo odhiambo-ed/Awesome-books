@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: rgb(164, 186, 187);
 }
 
@@ -99,11 +100,16 @@ body {
   list-style: none;
 }
 
-.nav-items li {
+.nav-items a {
   font-family: 'Fredoka', sans-serif;
   font-size: large;
   padding: 0 15px;
   color: #fff;
+  cursor: pointer;
+}
+
+.nav-items a:hover {
+  color:black;
 }
 
 .book-add h2 {
@@ -154,7 +160,7 @@ body {
 }
 
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
