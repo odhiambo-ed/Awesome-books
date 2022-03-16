@@ -1,11 +1,14 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: rgb(164, 186, 187);
 }
 
-.container h1 {
+.container h2 {
   text-align: center;
   font-family: 'Fredoka', sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  font-size: xx-large;
 }
 
 .book-display {
@@ -14,7 +17,7 @@ body {
   flex-direction: column;
   list-style: none;
   padding: 1px;
-  margin: 5%;
+  margin: 5% 5% 12% 5%;
 }
 
 .book-items {
@@ -35,9 +38,9 @@ body {
 .field-add {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin: auto;
   text-align: center;
+  margin: 8% 0;
+  padding-top: 10px;
 }
 
 #add-form input {
@@ -76,4 +79,95 @@ body {
   text-align: center;
   white-space: nowrap;
   padding: 15px 25px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(109, 31, 0);
+}
+
+.navigation h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: xx-large;
+  color: #fff;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-items a {
+  font-family: 'Fredoka', sans-serif;
+  font-size: large;
+  padding: 0 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-items a:hover {
+  color: black;
+}
+
+.book-add h2 {
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  font-size: xx-large;
+}
+
+/* contact page */
+
+.contact-info {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.contact-info h2 {
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  font-size: xxx-large;
+}
+
+.contact-info p {
+  font-family: 'Fredoka', sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  padding: 0 35px;
+  color: #000;
+}
+
+.contact-info ul {
+  font-family: 'Fredoka', sans-serif;
+  font-size: x-large;
+  padding: 4% 22%;
+  color: #000;
+  text-align: left;
+}
+
+.contact-info ul li {
+  font-family: 'Fredoka', sans-serif;
+  font-size: x-large;
+  padding: 3% 0;
+  color: #000;
+  text-align: left;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(109, 31, 0);
+  font-family: 'Fredoka', sans-serif;
+  font-size: x-large;
+  text-align: center;
+  color: #fff;
+  padding: 1em 0;
 }

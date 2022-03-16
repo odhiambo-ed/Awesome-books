@@ -14,17 +14,25 @@
 
 <body>
     <header>
-        <nav>
-
+        <nav class="navigation">
+            <h1 class="logo">All Awesome Books</h1>
+            <ul class="nav-items">
+                <li id="book-list"><a>Book List</a></li>
+                <li id="add-new"><a>Add new</a></li>
+                <li id="contact"><a>Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <div class="container">
-            <h1>All Awesome Books</h1>
-            <div class="book-display">
-                <!-- book items -->
+            <div class="books-items">
+                <h2>Books List</h2>
+                <div class="book-display">
+                    <!-- book items -->
+                </div>
             </div>
             <div class="book-add">
+                <h2>Add a book to the list.</h2>
                 <div class="field-add">
                     <form id="add-form">
                         <input id="author" type="text" placeholder="Author"><br>
@@ -35,7 +43,21 @@
                 </div>
             </div>
         </div>
+        <section class="contact-info">
+            <div class="desc">
+                <h2>Contact information</h2>
+                <p>Do you have any questions or you just want to reach out to us!</p>
+            </div>
+            <ul>
+                <li>Our e-mail: mail@example.com</li>
+                <li>Our phone number: 007637526567</li>
+                <li>Our address: 2149 Powder House Road</li>
+            </ul>
+        </section>
     </main>
+    <footer>
+        <h5>All copyrights are reserved</h5>
+    </footer>
     <script src="main.js"></script>
 </body>
 
