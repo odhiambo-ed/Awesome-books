@@ -1,0 +1,84 @@
+body {
+    margin:0;
+    background-color: rgb(164, 186, 187);
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.book-display {
+    border : 1px dotted rgb(0, 102, 255);
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1px;
+    margin: 5%;
+}
+
+.book-items {
+    font-family: 'Fredoka', sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding:5px;
+    align-items: center;
+}
+
+.book-items li {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+
+
+
+.field-add {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin: auto;
+    text-align: center;
+}
+
+#add-form input {
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: large;
+}
+
+#add-form button {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  outline: none;
+  padding: 8px .8em;
+  text-align: center;
+  white-space: nowrap;
+  padding: 15px 25px;
+}
+
+.remove-btn {
+  background-color: #ff0000;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  outline: none;
+  padding: 8px .8em;
+  text-align: center;
+  white-space: nowrap;
+  padding: 15px 25px;
+}
+
