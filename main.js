@@ -4,11 +4,11 @@ class BookList {
     this.loadBooksFromStorage();
   }
 
-  addBook(title, author) {
-    const book = new Book(title, author, this.bookList.length + 1);
+  addBook(bookTitle, bookAuthor) {
+    const book = { title: bookTitle, author: bookAuthor, id: this.bookList.length + 1 };
     this.bookList.push(book);
     localStorage.setItem('books', JSON.stringify(this.bookList));
-    this.displayBook(book);
+    this.displayBook(book.id);
   }
 
   removeBook(bookId) {
@@ -23,7 +23,16 @@ class BookList {
     return this.bookList;
   }
 
-  displayBook(book) {
+  displayBook(bookId) {
+    let book;
+
+    for (let i = 0; i < this.bookList.length; i += 1) {
+      if (this.bookList[i].id === bookId) {
+        book = this.bookList[i];
+        break;
+      }
+    }
+
     // create ul to hold book information
     const bookUl = document.createElement('ul');
     bookUl.className = 'book-items';
@@ -75,25 +84,9 @@ class BookList {
 
       // loop through the books to display to browser
       for (let i = 0; i < this.bookList.length; i += 1) {
-        this.displayBook(this.bookList[i]);
+        this.displayBook(this.bookList[i].id);
       }
     }
-  }
-}
-
-class Book {
-  constructor(title, author, id) {
-    this.title = title;
-    this.author = author;
-    this.id = id;
-  }
-
-  getTitle() {
-    return this.title;
-  }
-
-  getAuthor() {
-    return this.author;
   }
 }
 
@@ -129,7 +122,7 @@ document.addEventListener('click', (e) => {
   if (e.target && e.target.className === 'remove-btn') {
     e.target.closest('ul').nextSibling.remove();
 
-    const id = e.target.closest('ul').getAttribute('data-id');
+    const id = parseInt(e.target.closest('ul').getAttribute('data-id'), 10);
 
     e.target.closest('ul').remove();
 
