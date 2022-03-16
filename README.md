@@ -5,11 +5,6 @@
 
 > Awesome books
 
-## Built With
-
-- Javascript
-- HTML
-
 
 To get a local copy up and running follow these simple example steps.
 
