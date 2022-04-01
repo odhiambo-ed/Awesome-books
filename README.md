@@ -4,9 +4,7 @@
 # Project Name
 
 > Awesome books
-
-
-To get a local copy up and running follow these simple example steps.
+This a BookList app that adds book details to a table and removes the book details upon clicking the delete/remove button.
 
 
 ## Authors
